@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Everything About Domain Names</title>
+  </head>
+  <body>
+    <!--Nav Bar-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container">
+        <a href="Index.html" class="navbar-brand"
+          ><img src="img/Screenshot 2024-06-09 215023.png" alt="" id="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="DifferentServers.html" class="nav-link"
+                >Different Servers</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="DnsProcess.html" class="nav-link">DNS Process</a>
+            </li>
+            <li class="nav-item">
+              <a href="GlobalDnsAttack.html" class="nav-link"
+                >Global DNS Attacks</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="Sources.html" class="nav-link">Sources</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Nav Bar End-->
+    <!--Showcase-->
+    <section class="bg-dark text-light p-5 text-center text-sm-start">
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h1>
+              Shedding Light on DNS <span class="text-danger">Attacks</span>
+            </h1>
+            <p>
+                While protected, the DNS can still be compromised; we will look into the different types of attacks and some examples. This page shows the dark side of DNS and how even it can be vulnerable. Without DNS, we could not use the internet as it is now.
+            </p>
+          </div>
+          <img
+            src="img/DNS.jpeg"
+            alt="Domain Names"
+            class="img-fluid w-50 d-none d-sm-block"
+          />
+        </div>
+      </div>
+    </section>
+    <!--Article content-->
+    <section class="bg-light text-dark p-5 text-center">
+      <div class="container">
+        <div class="row align-items-center">
+        </div>
+      </div>
+    </section>
+    <!--Article content-->
+    <section class="bg-light text-dark p-5 text-center">
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h1>The Types of Global DNS<span class="text-danger"> Attacks</span> Process</h1>
+            <p>
+                <strong>Cache poisoning:</strong>  Attackers corrupt the DNS resolver's cache by inserting false DNS entries. This causes users to be redirected to malicious sites instead of the intended ones. For example, if I wanted to use YouTube, it would seem as if I was going to go to YouTube, but due to cache poisoning, I would get redirected to a harmful site.<br>
+                <br>
+                <strong>DDoS Attacks on DNS Servers:</strong> Distributed Denial of Service (DDoS) attacks flood DNS servers with an overwhelming amount of traffic, causing them to crash or become unresponsive.<br>
+                <br>
+                <strong>DNS Tunneling:</strong> Attackers encapsulate malicious data within DNS queries and responses to bypass network security measures.<br>
+                <br>
+                <strong>DNS Amplification Attack:</strong> Attackers send small DNS queries with a spoofed IP address (the target’s address) to open DNS resolvers. The resolvers then send much larger responses to the target, amplifying the volume of traffic directed at the victim.<br>
+                <br>
+                <strong>DNS hijacking:</strong> Attackers redirect the DNS queries to malicious servers by compromising DNS settings on a user's computer or router, or even by altering DNS records at the registrar level.<br>
+
+            </p>
+
+          </div>
+          <div class="container">
+          </div>
+          <div>
+            <h1>Global DNS<span class="text-danger"> Attacks</span> </h1>
+            <p>
+                <strong>DNSChanger Malware: </strong> This malware altered DNS settings on infected computers, redirecting users to malicious websites. It affected millions of devices worldwide until a coordinated takedown effort by law enforcement agencies shut down the associated rogue DNS servers.<br>
+                <br>
+                <strong>Sea Turtle Campaign: </strong> Distributed Denial of Service (DDoS) attacks flood DNS servers with an overwhelming amount of traffic, causing them to crash or become unresponsive.<br>
+                <br>
+                <strong>Kaminsky DNS Cache Poisoning: </strong> In 2008 a man named Dan Kaminsky who was a security researcher found a massive DNS vulnerability allowing any attacker to send internet users malicious sites, this was achieved using cache poisoning. When discovered a meeting was quickly called and a solution was found however it did not forever solve the problem but now the attacks would take days giving time to be caught.<br>
+                <br>
+                <strong>Sea Turtle Campaign:</strong> A state-sponsored attack targeting organizations in the Middle East and North Africa. Attackers gained control of DNS records to redirect traffic and capture sensitive information from various government and private sector entities.<br>
+                <br>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-dark text-white pt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <h5 class="mb-3">About Us</h5>
+            <p class="text-muted">
+              The DNS Foundation is dedicated to educating individuals and
+              organizations about the Domain Name System. Our goal is to provide
+              clear and straightforward information to help you navigate the
+              complexities of DNS.
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <h5 class="mb-3">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="Index.html" class="text-white text-decoration-none"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="DifferentServers.html"
+                  class="text-white text-decoration-none"
+                  >Different Servers</a
+                >
+              </li>
+              <li>
+                <a
+                  href="DnsProcess.html"
+                  class="text-white text-decoration-none"
+                  >DNS Process</a
+                >
+              </li>
+              <li>
+                <a
+                  href="GlobalDnsAttack.html"
+                  class="text-white text-decoration-none"
+                  >Global DNS Attacks</a
+                >
+              </li>
+              <li>
+                <a href="Sources.html" class="text-white text-decoration-none"
+                  >Sources</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+            <h5 class="mb-3">Contact Us</h5>
+            <ul class="list-unstyled">
+              <li>
+                <p class="text-muted mb-0">
+                  <strong>Address:</strong> 123 Hard Drive Street, Fredericton,
+                  NB
+                </p>
+              </li>
+              <li>
+                <p class="text-muted mb-0">
+                  <strong>Email:</strong> dnsFoundation@gmail.com
+                </p>
+              </li>
+              <li>
+                <p class="text-muted mb-0">
+                  <strong>Phone:</strong> +1 (234) 567-1234
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <div class="row">
+          <div class="col-md-6 col-lg-6">
+            <p class="text-center text-md-start mb-0">
+              © 2024 The DNS Foundation. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

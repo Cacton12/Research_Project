@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Everything About Domain Names</title>
+  </head>
+  <body>
+    <!--Nav Bar-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container">
+        <a href="Index.html" class="navbar-brand"
+          ><img src="img/Screenshot 2024-06-09 215023.png" alt="" id="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="DifferentServers.html" class="nav-link"
+                >Different Servers</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="DnsProcess.html" class="nav-link">DNS Process</a>
+            </li>
+            <li class="nav-item">
+              <a href="GlobalDnsAttack.html" class="nav-link"
+                >Global DNS Attacks</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="Sources.html" class="nav-link">Sources</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Nav Bar End-->
+    <!--Showcase-->
+    <section class="bg-dark text-light p-5 text-center text-sm-start">
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h1>
+                The Complex DNS<span class="text-primary"> DNS</span> Process
+            </h1>
+            <p>
+              Any time you search something on the internet your computer must
+              first go through the DNS process. On this page we will be looking
+              into the DNS Process and explain each step along the way. I hope
+              you find this easy to follow and coherent.
+            </p>
+          </div>
+          <img
+            src="img/servers.webp"
+            alt="Domain Names"
+            class="img-fluid w-50 d-none d-sm-block"
+          />
+        </div>
+      </div>
+    </section>
+    <!--Article content-->
+    <section class="bg-light text-dark p-5 text-center">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-4 mb-md-0">
+            <img
+              src="img/Internet.jpg"
+              alt="DNS Illustration"
+              class="img-fluid w-100"
+            />
+          </div>
+          <div class="col-md-6">
+            <div class="p-3 p-md-5">
+              <h1>Step Number<span class="text-primary"> One</span></h1>
+              <p>
+                A domain name must be entered into the web browser to begin the
+                DNS process. Once this happens, your computer will search for
+                the IP address of the domain name given in the DNS caching
+                server to see if it's in your cache. It will load the website
+                quickly; however, if it is not in the cache, it will need to go
+                to the Recursive Resolver for help.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Article content-->
+    <section class="bg-light text-dark p-5 text-center">
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h1>Step Number<span class="text-primary"> Two</span></h1>
+            <p>
+              Since nothing was found in the cache your computer will query the
+              Recursive Resolver. Once it searches here, it will continue its
+              journey, searching for the IP address of the website domain you
+              searched for.
+            </p>
+          </div>
+          <div class="container"></div>
+          <div>
+            <h1>Step Number<span class="text-primary"> Three</span></h1>
+            <p>
+              After it fails, the Recursive Resolver will go to the root servers
+              for help, and being the nice server he is, the root server sends
+              back a list of authoritative servers that fall under the TDL
+              servers connected to the web domains extension. This means that if
+              your search, for example, ends with .com, it would give back a
+              list of authoritative servers in the .com TDL.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-light text-dark p-0 text-center">
+      <div class="container">
+        <img src="img/DNS SERVERS.png" alt="" id="DNS_Server_img" class="img-fluid w-50 d-none d-sm-block"/>
+      </div>
+    </section>
+    <section class="bg-light text-dark p-5 text-center">
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h1>Step Number<span class="text-primary"> Four</span></h1>
+            <p>
+              Once the correlated IP address is found, it will connect you to
+              the server where it found the IP address, allowing your computer
+              to connect to the website. It is amazing how this process is
+              complete within milliseconds.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-dark text-white pt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <h5 class="mb-3">About Us</h5>
+            <p class="text-muted">
+              The DNS Foundation is dedicated to educating individuals and
+              organizations about the Domain Name System. Our goal is to provide
+              clear and straightforward information to help you navigate the
+              complexities of DNS.
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <h5 class="mb-3">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="Index.html" class="text-white text-decoration-none"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="DifferentServers.html"
+                  class="text-white text-decoration-none"
+                  >Different Servers</a
+                >
+              </li>
+              <li>
+                <a
+                  href="DnsProcess.html"
+                  class="text-white text-decoration-none"
+                  >DNS Process</a
+                >
+              </li>
+              <li>
+                <a
+                  href="GlobalDnsAttack.html"
+                  class="text-white text-decoration-none"
+                  >Global DNS Attacks</a
+                >
+              </li>
+              <li>
+                <a href="Sources.html" class="text-white text-decoration-none"
+                  >Sources</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+            <h5 class="mb-3">Contact Us</h5>
+            <ul class="list-unstyled">
+              <li>
+                <p class="text-muted mb-0">
+                  <strong>Address:</strong> 123 Hard Drive Street, Fredericton,
+                  NB
+                </p>
+              </li>
+              <li>
+                <p class="text-muted mb-0">
+                  <strong>Email:</strong> dnsFoundation@gmail.com
+                </p>
+              </li>
+              <li>
+                <p class="text-muted mb-0">
+                  <strong>Phone:</strong> +1 (234) 567-1234
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <div class="row">
+          <div class="col-md-6 col-lg-6">
+            <p class="text-center text-md-start mb-0">
+              © 2024 The DNS Foundation. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
